@@ -29,7 +29,8 @@ Note that the Employees relation describes pilots and other kinds of employees a
 ```
 STUDENT (regno: string, name: string, major: string, bdate: date)
 COURSE (course #:int, cname: string, dept: string) 
-ENROLL ( regno: string, course#:int, sem:int, marks:int) BOOK _ ADOPTION (course# :int, sem:int, book-ISBN:int)
+ENROLL ( regno: string, course#:int, sem:int, marks:int) 
+BOOK_ADOPTION (course# :int, sem:int, book-ISBN:int)
 TEXT (book-ISBN:int, book-title:string, publisher:string, author:string)
 ```
 * Create the above tables by properly specifying the primary keys and the foreign keys.
