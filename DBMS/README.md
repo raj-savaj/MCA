@@ -49,7 +49,9 @@ ORDER-DETAILS (order-no:int, book-id:int, quantity:int)
 * Create the above tables by properly specifying the primary keys and the foreign keys.
 * Enter at least five tuples for each relation.
 * Give the details of the authors who have 2 or more books in the catalog and the price of the books is greater than the average price of the books in the catalog and the year of publication is after 2000.
+* Find the author of the book which has maximum sales.
 * Demonstrate how you increase the price of books published by a specific publisher by 10%.
+* Generate suitable reports.
 ### Exercise-5
 ```
 BRANCH (branch-name: string, branch-city :string, assets :real) 
@@ -58,7 +60,7 @@ CUSTOMER (customer-name:string,customer-street:string,customer- city:string)
 LOAN (loan-number:int, branch-name:string, amount:real)
 BORROWER (customer-name:string, loan-number:int)
 ```
-* Create the above tables by properly specifying the primary keys and the foreign keys
-* Enter at least five tuples for each relation
 * Find all the customers who have at least two accounts at the Main branch.
 * Find all the customers who have an account at all the branches located in a specific city.
+* Demonstrate how you delete all account tuples at every branch located in a specific city.
+* Generate suitable reports.
