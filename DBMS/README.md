@@ -10,7 +10,7 @@ The meaning of these relations is straight forward; <br>for example, Enrolled ha
 Write the following queries in SQL. No duplicates should be printed in any of the answers.
 *  Find the names of all Juniors (level = JR) who are enrolled in a class taught by Prof. Harshith
 * Find the names of all classes that either meet in room R128 or have five or more Students enrolled.
-* Find the names of all students who are enrolled in two classes that meet at the same time.
+* Find the names of faculty members who teach in every room in which some class is taught.
 * Find the names of faculty members for whom the combined enrolment of the courses that they teach is less than five
 
 ### Exercise-2
@@ -38,6 +38,7 @@ TEXT (book-ISBN:int, book-title:string, publisher:string, author:string)
 * Demonstrate how you add a new text book to the database and make this book be adopted by some department.
 * Produce a list of text books (include Course #, Book-ISBN, Book- title) in the alphabetical order for courses offered by the ‘CS’ department that use more than two books.
 * List any department that has all its adopted books published by a specific publisher.
+* Generate suitable reports.
 ### Exercise-4
 ```
 AUTHOR (author-id: int, name: string, city: string, country: string) 
