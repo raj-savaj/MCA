@@ -63,14 +63,14 @@ INTO borrower VALUES ('ROVER', 5)
 SELECT * FROM DUAL;
                                                                                     
 -- Find all the customers who have at least two accounts at the Main branch.                                                                                   
-SELECT d.c_name FROM customer c,depositor d, account a WHERE a.accno=d.accno and d.c_name =c.c_name AND a.branch_name ='RESIDENCY ROAD' GROUP BY d.c_name HAVING COUNT(d.c_name) >= 2
+SELECT d.c_name FROM customer c,depositor d, account a WHERE a.accno=d.accno and d.c_name =c.c_name AND a.branch_name ='RESIDENCY ROAD' GROUP BY d.c_name HAVING COUNT(d.c_name) >= 2;
              
 --Find all the customers who have an account at all the branches located in a specific city
-Select A.c_name From depositor A LEFT OUTER JOIN account B on B.accno = A.accno group by A.c_name Having count(distinct(B.branch_name)) = (select count(branch_name) from branch where branch_city = 'BANGALORE')
+Select A.c_name From depositor A LEFT OUTER JOIN account B on B.accno = A.accno group by A.c_name Having count(distinct(B.branch_name)) = (select count(branch_name) from branch where branch_city = 'BANGALORE');
                                                                               
 --Demonstrate how you delete all account tuples at every branch located in a specific city.
 DELETE FROM depositor WHERE accno in (SELECT  accno  FROM account WHERE branch_name IN (SELECT branch_name FROM branch WHERE branch_city = 'DELHI'));
 DELETE FROM account WHERE branch_name IN (SELECT branch_name FROM branch WHERE branch_city = 'DELHI');   
                                                                                         
 --Generate suitable reports.
-select a.accno,c.c_name,c.c_street ,a.balance from customer c,account a,depositor d where a.accno=d.accno and c.c_name=d.c_name;                                                               
+select a.accno,c.c_name,c.c_street ,a.balance from customer c,account a,depositor d where a.accno=d.accno and c.c_name=d.c_name;      
