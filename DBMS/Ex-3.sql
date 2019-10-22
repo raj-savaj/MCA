@@ -49,3 +49,13 @@ INTO BOOK_ADOPTION VALUES (4,5,1001)
 INTO BOOK_ADOPTION VALUES (1,5,1007)
 INTO BOOK_ADOPTION VALUES (5,3,1008)
 SELECT * FROM dual;
+                                                                                                                              
+                                                                                                                              
+#Produce a list of text books (include Course #, Book-ISBN, Book-title) in the alphabetical order for courses offered by the ‘CS’ department that use more than two books
+select  c.course_no,cname,t.book_isbn,book_title  from  COURSE C,BOOK_ADOPTION BA,TEXTBOOK T  where C.course_no=BA.course_no and  T.book_isbn=BA.book_isbn and  C.dept='CSE'  and c.course_no  in (select course_no from BOOK_ADOPTION group by course_no having count(*) >=2) order by T.book_title
+
+#List any department that has all its adopted books published by a specific publisher.
+SELECT DISTINCT DEPT FROM COURSE C,BOOK_ADOPTION B,TEXTBOOK T WHERE C.COURSE_NO=B.COURSE_NO AND T.BOOK_ISBN=B.BOOK_ISBN AND T.PUBLISHER='PEARSON';
+
+#Generate suitable reports.
+select  c.course_no,c.cname,c.dept,t.book_isbn,t.book_title  from  COURSE c,BOOK_ADOPTION b,TEXTBOOK t where c.course_no=b.course_no and t.book_isbn=t.book_isbn;
