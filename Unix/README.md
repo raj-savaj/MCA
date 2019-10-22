@@ -1,3 +1,6 @@
+```
+in the unix_All.pdf file Each page one programme
+```
 1. Write a shell script that takes a valid directory name as an argument and recursively descend all the sub-directories, finds the maximum length of any file in that hierarchy and writes this maximum value to the standard output.
 
 1. Write a shell script that accepts a path name and creates all the components in that path name as directories. For example, if the script is named mpc, then the command mpc a/b/c/d should create   directories a, a/b, a/b/c, a/b/c/d.
