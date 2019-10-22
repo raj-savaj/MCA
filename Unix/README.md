@@ -32,3 +32,6 @@ in the unix_All.pdf file Each page one programme
 1. Write an awk script that accepts date argument in the form of dd-mm-yy and displays it in the form if month, day and year. The script should check the validity of the argument and in the case of error, display a suitable message.
 1. Write an awk script to delete duplicated lines from a text file. The order of the original lines must remain unchanged.  
 1. Write an awk script to find out total number of books sold in each discipline as well as total book sold using associate array down table
+```
+Raj Savaj
+```
