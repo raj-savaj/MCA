@@ -48,3 +48,16 @@ INTO ORDER_DETAILS VALUES (5, 5, 1)
 INTO ORDER_DETAILS VALUES (6, 6, 7)
 INTO ORDER_DETAILS VALUES (7, 7, 9)
 SELECT * FROM DUAL;
+
+#Give the details of the authors who have 2 or more books in the catalog and the price of the books is greater than the average price of the books in the catalog and the year of publication is after 2000.
+select name  from AUTHOR where author_id in( select author_id from CATALOG where  year > 2000 AND price > ( SELECT AVG(price) FROM Catalog) group by author_id having (author_id) > 2 )
+
+#Find the author of the book which has maximum sales.
+select name from AUTHOR where author_id in (select author_id from CATALOG where book_id in((select book_id from ORDER_DETAILS group by book_id having sum(quantity)=(select  max(sum(quantity)) from ORDER_DETAILS group by book_id))))
+
+#Demonstrate how you increase the price of books published by a specific publisher by 10%.
+update CATALOG set price=price+(price*0.10) where publisher_id=1;
+
+#Generate suitable reports.
+select a.author_id,a.name,p.publisher_id,p.name,c.book_id,c.title from author a,publisher p,CATALOG c,ORDER_DETAILS o  where  a.author_id=c.author_id  and  p.publisher_id=c.publisher_id  and c.book_id=o.book_id;
+
