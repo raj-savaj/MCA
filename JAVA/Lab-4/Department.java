@@ -1,5 +1,3 @@
-package Lab4;
-
 class employee
 {
         private int eno;
@@ -17,7 +15,7 @@ class employee
 }
 
 public class Department extends employee{
-	private int dno;
+    private int dno;
     private String dname;
     public void setdept(int no,String name)
     {
@@ -29,13 +27,11 @@ public class Department extends employee{
             System.out.println("Deptno : " + dno);
             System.out.println("Deptname : " + dname);
     }
-	public static void main(String[] args) {
-		Department d = new Department();
+    public static void main(String[] args) {
+	Department d = new Department();
         d.setemp(100,"aaaa");
         d.setdept(20,"Sales");
         d.putemp();
         d.putdept();
-
-	}
-
+   }
 }
