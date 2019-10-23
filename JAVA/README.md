@@ -25,7 +25,9 @@
    c. Import and compile these classes in other program. 
 ```
 ```
-7. Write a JAVA Program to create an enumeration Day of Week with seven values SUNDAY through SATURDAY. Add a method is Workday( ) to the    DayofWeek class that returns true if the value on which it is called is MONDAY through FRIDAY. For example, the call                      DayOfWeek.SUNDAY.isWorkDay ( ) returns false. 
+7. Write a JAVA Program to create an enumeration Day of Week with seven values SUNDAY through SATURDAY.
+   Add a method is Workday( ) to the DayofWeek class that returns true if the value on which it is called is MONDAY through FRIDAY. 
+   For example, the call DayOfWeek.SUNDAY.isWorkDay ( ) returns false. 
 ```
 ```
 8. Write a JAVA program to implement a Queue using user defined Exception Handling (also make use of throw, throws). 
