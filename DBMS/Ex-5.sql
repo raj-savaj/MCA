@@ -66,8 +66,8 @@ SELECT * FROM DUAL;
 SELECT d.c_name FROM customer c,depositor d, account a WHERE a.accno=d.accno and d.c_name =c.c_name AND a.branch_name ='RESIDENCY ROAD' GROUP BY d.c_name HAVING COUNT(d.c_name) >= 2;
              
 --Find all the customers who have an account at all the branches located in a specific city
-Select A.c_name From depositor A LEFT OUTER JOIN account B on B.accno = A.accno group by A.c_name Having count(distinct(B.branch_name)) = (select count(branch_name) from branch where branch_city = 'BANGALORE');
-                                                                              
+select distinct c_name from depositor d,account a,branch b where d.accno=a.accno and b.branch_name=a.branch_name and b.branch_city='bangalore' group by c_name having count(distinct a.branch_name)>=(select count(distinct branch_name)from branch where branch_city='bangalore');                                                                              
+
 --Demonstrate how you delete all account tuples at every branch located in a specific city.
 DELETE FROM depositor WHERE accno in (SELECT  accno  FROM account WHERE branch_name IN (SELECT branch_name FROM branch WHERE branch_city = 'DELHI'));
 DELETE FROM account WHERE branch_name IN (SELECT branch_name FROM branch WHERE branch_city = 'DELHI');   
