@@ -58,6 +58,7 @@ void sort(int n)
 		}
 	}
 }
+
 void main(){
 	int m,n,key,i,pos,ch;
 	clrscr();
