@@ -74,4 +74,24 @@ void top_srt()
        printf("\t%d",sv);
    }
 }
+/*** Output  ***/
+/*
+Enter the number of nodes for the graph : 4
+Enter the Adjacency matrix for the Diagraph :
+0 0 1 1
+0 0 1 0
+0 0 0 0
+0 1 0 0 
+The Solution for the graph is :
+	1-> 4->	2-> 3->
 
+Enter the number of nodes for the graph : 4
+Enter the Adjacency matrix for the Diagraph :
+0 1 0 0
+0 0 0 1
+1 0 0 0
+0 0 1 0 
+The Solution for the graph is :
+	0->
+Graph Indicates cyclic digraph
+*/
