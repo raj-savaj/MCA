@@ -134,3 +134,10 @@ void main(){
 	}
 	free(a);
 }
+/*** Output ***/
+
+/*
+Enter Your Choice : 
+Enter The Range :
+Enter The Key Element : 
+*/
