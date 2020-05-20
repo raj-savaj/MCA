@@ -61,3 +61,20 @@ void SSSP()
 			}
 	}
 }
+/*** Outpur ***/
+/* 
+Enter the no of vertices : 5
+Enter the cost adjacency matrix, if there is no egde enter the cost as 999 
+0 3 999 7 999
+3 0 4 2 999
+999 4 0 5 6
+999 2 5 0 4
+999 999 999 999 0
+Enter the source vertex : 1
+
+The shortest distance from 1 is
+1--->2=3
+1--->3=7
+1--->4=5
+1--->5=9
+*/
