@@ -48,3 +48,9 @@ void nqueens()
 			}
 	}
 }
+/*** Output ***/
+/*
+Enter the number of queens : 4
+Queens Placement on the chess board :
+
+*/
