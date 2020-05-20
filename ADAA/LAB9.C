@@ -82,8 +82,22 @@ void opt_sol()
 		}
 	}
 }
+/*** Output ***/
+/*
+enter the number of items: 4
+enter the capacity of knapsack m: 5
+enter the weights and values of each items:
+w[1]=2
+p[1]=12
+w[2]=1
+p[2]=10
+w[3]=3
+p[3]=20
+w[4]=2
+p[4]=15
 
+The Values are :
 
-
-
-
+the optimal solution is 37
+the items included are : item1 item2 item4
+*/
