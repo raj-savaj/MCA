@@ -34,18 +34,22 @@ void nqueens()
 	{
 		x[k] += 1;
 		for (i = 1; i < k && x[k] <= n; i++)
+		{
 			if ((x[i] == x[k]) || (abs(x[i] - x[k]) == abs(i - k)))
 			{
 				x[k] += 1;
 				i = 0;
-			} 
-			if (x[k] > n) 
-				--k;
-			else
-			{
-				k++;
-				x[k] = 0;
 			}
+		}
+		if (x[k] > n)
+		{
+			--k;
+		}
+		else
+		{
+			k++;
+			x[k] = 0;
+		}
 	}
 }
 /*** Output ***/
