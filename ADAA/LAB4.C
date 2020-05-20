@@ -94,4 +94,12 @@ Enter the Adjacency matrix for the Diagraph :
 The Solution for the graph is :
 	0->
 Graph Indicates cyclic digraph
+
+0 0 1 0 0
+0 0 1 0 0
+0 0 0 1 1
+0 0 0 0 1
+0 0 0 0 0
+
+1->2->3->4->5
 */
