@@ -50,3 +50,12 @@ void sum_of_subsets(int sum, int ele, int tot)
     sum_of_subsets(sum, ele + 1, tot - w[ele]);
   }
 }
+/*** Output ***/
+/*
+Enter the number of elements in the set:5
+Enter 5 distinct positive numbers in ascending order into the set :
+1 3 5 4 7
+Enter Sum : 7
+Subset 1 : 3 4
+Subset 2 : 7
+*/
