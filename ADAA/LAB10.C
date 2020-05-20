@@ -38,3 +38,18 @@ void main()
 	printf("\n Minimun cost=%d", mincost);
 	getch();
 }
+
+/*** Output ***/
+/*
+Enter the number of nodes: 4
+Enter the adjacency matrix: 
+0 5 999 4
+5 0 3 1
+999 3 0 2
+4 1 2 0
+
+Edge 1:(1 4) cost:4
+Edge 2:(4 2) cost:1
+Edge 3:(4 3) cost:2
+Minimum cost=7
+*/
