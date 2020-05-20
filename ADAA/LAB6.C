@@ -66,3 +66,11 @@ void main()
 	}
 	getch();
 }
+/*** Output ***/
+/*
+Enter the text:
+Raj Savaj
+Enter The Pattern :
+te
+Pattern Found at: 
+*/
