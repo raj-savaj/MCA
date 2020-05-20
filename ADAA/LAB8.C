@@ -55,3 +55,24 @@ void warshall()
     printf("\n");
   }
 }
+/*** Output ***/
+/*
+Enter number of nodes of the graph: 4
+Enter the adjacency matrix of the graph:
+0 1 0 0
+0 0 0 1
+0 0 0 0
+1 0 1 0
+
+The adjacency matrix is:
+0 1 0 0
+0 0 0 1
+0 0 0 0
+1 0 1 0
+
+The Transitive closure is:
+1 1 1 1
+1 1 1 1
+0 0 0 0 
+1 1 1 1
+*/
