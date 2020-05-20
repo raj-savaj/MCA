@@ -45,3 +45,19 @@ void main()
 	}
 	getch();
 }
+
+/*** Output ***/
+/*
+Enter number of nodes : 4
+Enter Adjacency matrix :
+0 1 1 0
+1 0 0 1
+1 0 0 1
+0 1 1 0
+Enter Source vertex :
+1
+The Reachable Nodes from starting nodes are :
+(1,2)
+(1,3)
+(2,4)
+*/
