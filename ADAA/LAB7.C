@@ -52,3 +52,19 @@ void floyd() {
     printf("\n");
   }
 }
+/*** Output ***/
+/*
+Enter number of nodes of the graph: 4
+Enter the adjacency matrix for the graph:
+0 999 3 999
+2 0 999 999
+999 7 0 1
+6 999 999 0
+
+The adjacency matrix is:
+The Distance Matrix is :
+0 10 3 4
+2 0  5 6
+7 7  0 1
+6 16 9 0
+*/
