@@ -24,7 +24,7 @@ public class Lab6 {
 		Thread.sleep(5000);
 		driver.findElement(By.name("phone")).sendKeys("9703336699");
 		Thread.sleep(5000);
-		driver.findElement(By.id("userName")).sendKeys("abcd@gmail.com");
+		driver.findElement(By.name("userName")).sendKeys("abcd@gmail.com");
 		Thread.sleep(5000);
 		driver.findElement(By.name("address1")).sendKeys("chennai fasf");
 		Thread.sleep(5000);
@@ -41,7 +41,7 @@ public class Lab6 {
 		System.out.println("Total Number of item count in dropdown list = " + dropdownCount);
 		s.selectByVisibleText("INDIA");
 		Thread.sleep(5000);
-		driver.findElement(By.id("email")).sendKeys("abcd@gmail.com");
+		driver.findElement(By.name("email")).sendKeys("abcd@gmail.com");
 		Thread.sleep(5000);
 		driver.findElement(By.name("password")).sendKeys("Madhvaraj");
 		Thread.sleep(5000);
