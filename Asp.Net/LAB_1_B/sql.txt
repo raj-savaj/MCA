@@ -1,0 +1,13 @@
+CREATE TABLE [dbo].[tbl_Course]
+(
+    [CourseID] INT NOT NULL PRIMARY KEY, 
+    [CourseName] NVARCHAR(MAX) NULL
+)
+
+CREATE TABLE [dbo].[tbl_Student] (
+    [USN]       NVARCHAR (MAX) NOT NULL,
+    [StudName]  NVARCHAR (MAX) NULL,
+    [Address]   NVARCHAR (MAX) NULL,
+    [CourseID]  INT            NULL,
+    [YrOfAdmsn] INT     NULL
+);
