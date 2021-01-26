@@ -1,0 +1,7 @@
+CREATE TABLE [dbo].[feedback] (
+    [Id]      INT           NOT NULL IDENTITY,
+    [Name]    VARCHAR (100) NULL,
+    [Email]   VARCHAR (50)  NULL,
+    [Message] VARCHAR (100) NULL
+);
+
